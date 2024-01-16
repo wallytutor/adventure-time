@@ -80,67 +80,6 @@ body {
       margin-top: 7rem;
     }
   }
-  
-
-/* ==================================================================
-    KATEX
-================================================================== */
-
-body { counter-reset: eqnum; }
-
-.katex { font-size: 1em !important; }
-
-.katex-display .katex {
-  /* Overwrite KaTeX settings. */
-  display: inline-block;
-
-  /* Allow display equations to wrap on small screens. */
-  white-space: normal;
-}
-
-.katex-display::after {
-  counter-increment: eqnum;
-  content: "(" counter(eqnum) ")";
-  position: relative;
-  float: right;
-  padding-right: 5px;
-}
-
-.nonumber .katex-display::after {
-  counter-increment: nothing;
-  content: "";
-}
-
-/* ==================================================================
-    CODE & HIGHLIGHT.JS
-================================================================== */
-
-code {
-  background-color: var(--block-background);
-  padding: 0.1em 0.2em;
-  border-radius: 2px;
-  font-size: 14px;
-}
-
-.hljs {
-  font-size: 14px;
-  line-height: 1.35em;
-  border-radius: 10px;
-}
-
-.hljs-meta { font-weight: bold;}
-
-.hljs-meta.shell_ {color: crimson;}
-.hljs-meta.prompt_ {color: rgb(25, 179, 51);}
-
-.code-output {
-  background: var(--output-background);
-  border: 1px dashed #dbdbdb;
-}
-
-.fndef-content {
-  line-height: 1.5em;
-}
 
 /* ==================================================================
     Franklin Base
